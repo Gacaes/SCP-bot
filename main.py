@@ -60,15 +60,14 @@ def is_dev(ctx):
     return commands.check(predicate)
 
 
+#'''
 ####    **DO NOT DELETE THIS OR EVERYTHING WILL BREAK**    ####
-client = commands.Bot(command_prefix='.',
-                      description='Femboy Lukas\' SCP bot',
-                      case_insensitive=True)
+client = commands.Bot(command_prefix='.',description='Femboy Lukas\' SCP bot',case_insensitive=True)
 bot = client
 #you can change the description string to whatever you want it to be
 
 
-'''DONT FUCKING DELETE THIS'''
+"""DONT FUCKING DELETE THIS"""
 @client.event
 async def on_message(message):
     if message.author == client.user:
@@ -77,7 +76,7 @@ async def on_message(message):
     await client.invoke(ctx)
 
 
-'''DONT FUCKING DELETE THIS'''
+"""DONT FUCKING DELETE THIS"""
 
 
 @client.event
@@ -293,7 +292,8 @@ class MyHelpCommand(commands.MinimalHelpCommand):
         for page in self.paginator.pages:
             e.description += page
         await destination.send(embed=e)
-
+#'''
+        
 debugging=False
 if __name__=="__main__":
     if not debugging:

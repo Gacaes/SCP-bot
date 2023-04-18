@@ -5,7 +5,7 @@ from suggestions import suggestions
 from random import choice
 from html_discord import send
 from funcs import msg_short
-import general_data as gd
+#import general_data as gd
 
 
 class General(commands.Cog):

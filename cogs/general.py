@@ -55,35 +55,35 @@ class General(commands.Cog):
         await ctx.channel.send()
     @commands.command()
     async def vote229K36(self,ctx):
-        await ctx.channel.send("Input: N/A\nOutput: Consistent containment procedures vessels greatly increase the warranty. Five by five by five (5x5x5) (five x five x 5) vessels subjects within. Other values are also what is secure.\nProposal by 05-03: Amend containment procedures for several high-risk anomalies to define precise requirements for cell dimensions. In three months, conduct a survey on these containment procedures to determine whether they have experienced any increase in efficacy.\nVotes\n05-01 Nay\n05-02 Nay\n05-03 Yea\n05-04 Nay\n05-05 Yea\n05-06 Yea \n05-07 Yea\n05-08 Abstained\n05-09 Nay\n05-10 Yea\n05-11 Nay\n05-12 Yea\n05-13 Abstained.\nStatus Approved\nNotes: The survey found both a significant decrease in the severity of all associated anomalies and the number of containment breaches initiated by them. These decreases were most notable in cases where the procedures defined cell dimensions as values divisible by five.")
+        await ctx.channel.send()
     @commands.command()
     async def vote713D27(self,ctx):
-        await ctx.channel.send("Input: SCP-1459's containment procedures.\nOutput: BAD BOY. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't stop. Don't…[REDACTED FOR LENGTH]\nProposal by 05-05: Continue testing SCP-1459.\nVotes\n05-01 Nay\n05-02 Nay\n05-03 Yea\n05-04 Yea\n05-05 Yea\n05-06 Nea\n05-07 Yea\n05-08 Nea\n05-09 Yea\n05-10 Yea\n05-11 Nea\n05-12 Yea\n05-13 Yea\nStatus Approved\nNotes: Testing on SCP-1459 is to continue indefinitely.")
+        await ctx.channel.send()
     @commands.command()
     async def vote821C95(self,ctx):
-        await ctx.channel.send("Input: SCP-2717's containment procedures.\nOutput: Two (2) specimens are to become the object. Both humans must be made of meat and bone prior to entering into the skin of the anomaly. They are not to come out leave them be.\nProposal by 05-04: Amend SCP-2717's containment procedures to ensure at least two of the attending D-Class cannot be retrieved after entering its bio-mass.\nVotes\n05-01 Abstained\n05-02 Nay\n05-03 Nay\n05-04 Yea\n05-05 Nay\n05-06 Nay\n05-07 Nay\n05-08 Nay\n05-09 Yea\n05-10 Nay\n05-11 Nay\n05-12 Yea\n05-13 Abstained\nStatus Denied\nNotes: Approximately two months after rejecting this proposal, SCP-2717 underwent its first recorded ovulation event (resulting in a catastrophic loss of containment and human life).")
+        await ctx.channel.send()
     @commands.command()
     async def vote287J09(self,ctx):
-        await ctx.channel.send("Input: SCP-2717's containment procedures.\nOutput: Four (4) human persons are to enter the pig and will not be removed. No person is to be protected. The object is to be contained indefinitely. Do not retrieve them. Leave them sleep.\nProposal by 05-04: Amend SCP-2717's containment procedures to ensure at least four of the attending D-Class cannot be retrieved after entering its bio-mass.\nVotes\n05-01 Abstain\n05-02 Nay\n05-03 Yea\n05-04 Yea\n05-05 Nay\n05-06 Nay\n05-07 Yea\n05-08 Yea\n05-09 Yea\n05-10 Nay\n05-11 Nay\n05-12 Yea\n05-13 Yea\nStatus Vetoed by The Ethics Committee\nNotes: Prior to amending the procedures, the Foundation Ethics Committee was alerted to the proposed revisions and called an emergency conference. The revisions were rejected. Approximately one month later, SCP-2717 underwent a second ovulation event (resulting in a catastrophic loss of containment and human life).")
+        await ctx.channel.send()
     @commands.command()
     async def vote475D47(self,ctx):
-        await ctx.channel.send("Input: SCP-2717's containment procedures.\nOutput: SIX (6) (six) casualties are to be placed in the center of the object. This is not to be interfered with. Personnel are to remain in its pouch until they are indistinguishable from their surroundings. They are not to be removed. No more testing. Good boys not permitted to leave. Good boys stay.\nVotes\n05-01 Yea\n05-02 Nea\n05-03 Yea\n05-04 Yea\n05-05 Nay\n05-06 Yea\n05-07 Yea\n05-08 Yea\n05-09 Yea\n05-10 Yea\n05-11 Yea\n05-12 Yea\n05-13 Yea\nStatus Approved\nNotes: After working with the Foundation Ethics Committee, a final draft of SCP-2717's containment procedures was approved. No additional ovulation events have occurred.")
+        await ctx.channel.send()
     @commands.command()
     async def vote174H62(self,ctx):
-        await ctx.channel.send("Input: N/A\nOutput: Sites to eviscerate one (1) (one) male domestic cat from throat to its knees every (1) hours. They are placed on walls of one chamber on-site. Bodies to remain until there are no (zero) gaps, which point they can be removed from oldest first.\nProposal: The O5 Council was unable to infer a proposed action from this output on account of being unable to determine whether 'oldest' referred to the feline's age or the time it had spent mounted on the wall.\nStatus Denied\nNotes:  Given the broadness of this proposal, no causal links to its rejection could be determined.")
+        await ctx.channel.send()
     @commands.command()
     async def vote635U01(self,ctx):
-        await ctx.channel.send("Input: N/A\nOutput: Ethical felines are to be detained and transferred for their condition. Leave their faces in containment chamber. Personnel are cautioned not to interact them.\nProposal: The O5 Council did not infer a proposed action from this output.\nNotes: No causal link to its rejection could be determined.")
+        await ctx.channel.send()
     
     @commands.command()
     async def proposal1(self,ctx):
-        await ctx.channel.send("Proposal by 05-05: Establish a multi-site early warning system based upon ERTZATZ Type AK9's ability to predict threats and containment breaches prior to their occurrence.\nVotes\n05-01 Nay\n05-02 Nay\n05-03 Yea\n05-04 Nay\n05-05 Yea\n05-06 Yea\n05-07 Yea\n05-08 Nay\n05-09 Nay\n05-10 Yea\n05-11 Nay\n05-12 Yea\n05-13 Yea\nStatus Approved.\nNotes: Three months after approval, the Multi-site Automated emergencY Dispatch Assignment sYstem (MAYDAY) was established. It relies upon human interpretations of ERTZATZ Type AK9's predictive outputs regarding upcoming containment breaches to formulate preventative actions.")
+        await ctx.channel.send()
     @commands.command()
     async def proposal2(self,ctx):
-        await ctx.channel.send("Proposal by 05-02: Conduct an investigation into whether or not the ERZATZ Type AK9 was involved in the recent loss of time at Site-17 along with the disappearance of several Ethics Committee officers stationed there.\nVotes\nThe vote was a unanimous with the council all voteing Yea with the exception of 05-01 and 05-13 who abstained.\nNotes: N/A")
+        await ctx.channel.send()
     @commands.command()
     async def proposal3(self,ctx):
-        await ctx.channel.send("Proposal by 05-02: Deactivate the ERZATZ Type AK9 while conducting the investigation into Site-17's lost time and missing Ethics Committee officers.\nVotes\n05-01 Abstained\n05-02 Yea\n05-03 Nay\n05-04 Nay\n05-05 Yea\n05-06 Yea\n05-07 Nay\n05-08 Abstained\n05-09 Nay\n05-10 Yea\n05-11 Yea\n05-12 Nay\n05-13 Abstained\nStatus Denied\nNotes:  It was argued by several members of the O5 council that the ERZATZ Type AK9's efficacy at predicting both the emergence of anomalies and their containment breaches was too critical to deactivate the unit — particularly prior to seeing any evidence that the unit was malfunctioning.")
+        await ctx.channel.send()
     @commands.command()
     async def proposal4(self,ctx):
         await ctx.channel.send("Proposal by 05-05: Deactivate the ERZATZ Type AK9 while conducting the investigation into Site-17's lost time, the missing Ethics Committee officers, and O5-02's disappearance.\nVotes\n05-01 Nay\n05-03 Yea\n05-04 Yea\n05-05 Yea\n05-06 Yea\n05-07 Nay\n05-08 Yea\n05-09 Yea\n05-10 Yea\n05-11 Yea\n05-12 Yea\n05-13 Yea\nStatus Approved\nNotes: N/A")

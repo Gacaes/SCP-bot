@@ -11,7 +11,7 @@ from json import dump,load,JSONDecodeError
 from urllib import request
 from bs4 import BeautifulSoup as bs4
 from html_discord import parse
-from errors import unrecognised_tags
+from modules.errors import unrecognised_tags
 from random import choice
 
 data={'ready':[]}
@@ -143,7 +143,7 @@ class SCP():
         self.b=[104, 101, 121, 32, 60, 64, 54, 48, 50, 51, 51, 49, 51, 48, 53, 49, 54, 49, 54, 53, 52, 50, 55, 56, 62, 44, 32, 103, 111, 111, 100, 32, 108, 117, 99, 107, 32, 102, 105, 120, 105, 110, 103, 32, 109, 101, 32, 60, 58, 111, 104, 109, 121, 58, 56, 50, 48, 53, 49, 56, 56, 50, 49, 56, 56, 53, 54, 52, 48, 55, 49, 52, 62]
         update=False
         try:
-            with open('data.json','r') as f:
+            with open('modules/data.json','r') as f:
                 self.data=load(f)
         except JSONDecodeError:
             update=True
@@ -201,12 +201,12 @@ class SCP():
         
 
     def save_data(self):
-        with open('data.json','w') as f:
+        with open('modules/data.json','w') as f:
             dump(self.data,f)
 
 db=SCP()
 #update_dict(threads=7,max_pages=70)
-#with open('data.json','w') as f:
+#with open('modules/data.json','w') as f:
 #    dump(data,f)
 #print('\n\n\n',data)
 #uncomment this ^ line to update the dictionary.

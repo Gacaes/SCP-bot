@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands, tasks
 from random import choice
-from keep_alive import keep_alive
+from modules.utils import keep_alive_
 from os import listdir, system, environ, system
 from threading import Thread
 from time import sleep
@@ -10,7 +10,11 @@ from pathlib import Path
 
 #system('clear') #clear the terminal from previous errors
 
-cog_override=['generate_cogs']
+cog_override=['generate_cogs','__init__','general_data','general']
+debugging=False
+#if not debugging:
+    #keep_alive=keep_alive_()
+
 
 running = True
 if Path('online_toggle.py').exists():
@@ -121,8 +125,8 @@ async def on_command_error(ctx, error):
         )
     else:
         #this is an unknown error
-        print(f'main ln117: {error} by <@{ctx.author.id}> ({ctx.author})')
-        await ctx.send(f'main ln126 error: {error}')
+        print(f'main ln124: {error} by <@{ctx.author.id}> ({ctx.author})')
+        await ctx.send(f'main ln125 error: {error}')
         await ctx.message.add_reaction('‼️')
 
 
@@ -293,8 +297,7 @@ class MyHelpCommand(commands.MinimalHelpCommand):
             e.description += page
         await destination.send(embed=e)
 #'''
-        
-debugging=False
+
 if __name__=="__main__":
     if not debugging:
         client.help_command = MyHelpCommand()
@@ -306,9 +309,9 @@ if __name__=="__main__":
         
         try:
             client.run(environ['client_key'])
-            from keep_alive import keep_alive
             #I made it into an object which has a method called kill
-            #to stop the bot, run keep_alive.kill() to stop the webserver before this main process
+            #to stop the bot, run keep_alive.kill() to stop the webserver before 
+            #this main process
         except discord.errors.HTTPException:
             print('\nDiscord has rate-limited and therefore temp-banned the bot')
     else:

@@ -2,7 +2,7 @@ import discord
 from discord import Embed
 from discord.ext import commands
 from random import choice,uniform
-from api import db
+from modules.api import db
 from time import sleep
 
 class SCPs(commands.Cog):

@@ -224,25 +224,25 @@ class General(commands.Cog):
         await ctx.send() #add emblem
       @commands.command(aliases=["Castaways,Beta-4"])
     async def beta4(self,ctx):
-        await ctx.send("Task Force Mission: MTF Beta-4 (Castaways) is a task force created with the sole purpose of assisting and monitoring GoI-466 (Wilson's Wildlife Solutions) in their interactions with local fauna-based anomalies.\nAssisting In Containment of Objects:\nSCP-3465\nSCP-3466\nSCP-3467\nSCP-3577\nSCP-3676\nSCP-3879") #add emblem
+        await ctx.send() #add emblem
       @commands.command(aliases=["MazHatters,Beta-7"])
     async def beta7(self,ctx):
-        await ctx.send("Task Force Mission: Mobile Task Force Beta-7 (Maz Hatters) specializes in the acquisition and containment of anomalies exhibiting extreme biological, chemical, or radiological hazards as well as the rapid containment and cleanup of areas affected by such anomalies. This includes the planning and deployment of contingencies for wide-area or pandemic spread of anomalous disease agents or other contagious phenomena.\nAssisting In Containment of Objects:\nSCP-400\nSCP-550\nSCP-1280\nSCP-1393\nSCP-2133\nSCP-2376\nSCP-2438\nSCP-2810\nSCP-3016\nSCP-4771\nSCP-5397\nSCP-6118") #add emblem
+        await ctx.send() #add emblem
       @commands.command(aliases=["HecatesSpear,Beta-777"])
     async def beta777(self,ctx):
-        await ctx.send("Task Force Mission: MTF Beta-777 (Hecate's Spear) specializes in thaumaturgical ritual analysis and countermeasures; including thaumaturgical combat. Based out of Site-91.\nAssisting In Containment of Objects:\nSCP-3743\nSCP-4612\nSCP-4712\nSCP-5079\nSCP-5512\nSCP-5626\nSCP-5923\nSCP-5957\nSCP-6094\nSCP-6364") #add emblem
+        await ctx.send() #add emblem
       @commands.command(aliases=["RedHerrings,Gamma-5"])
     async def gamma5(self,ctx):
-        await ctx.send("Task Force Mission: Mobile Task Force Gamma-5 (Red Herrings) specializes in preventing the dissemination of knowledge of anomalous events or phenomena in cases where initial suppression efforts have proven ineffective or insufficient, or in cases where such knowledge has already reached critical levels of public exposure. This includes the research and deployment of experimental amnestics as well as memory fabrication procedures.Assisting In Containment of Objects:\nSCP-1086\nSCP-1110\nSCP-1460\nSCP-1532\nSCP-1548\nSCP-1570\nSCP-1618\nSCP-1670\nSCP-2105\nSCP-2342\nSCP-2631\nSCP-3339\nSCP-3666\nSCP-4039\nSCP-4160\nSCP-5060\nSCP-5479\nSCP-5916") #add emblem
+        await ctx.send() #add emblem
       @commands.command(aliases=["DeepFeeders,Gamma-6"])
     async def gamma6(self,ctx):
-        await ctx.send("Task Force Mission: Mobile Task Force Gamma-6 (Deep Feeders) specializes in the investigation and tracking of deep-sea or oceanic anomalies.\nAssisting In Containment of Objects:\nSCP-169\nSCP-879\nSCP-1264\nSCP-1409\nSCP-2120\nSCP-2770\nSCP-2956\nSCP-3069\nSCP-5533\nSCP-6055") #add emblem
+        await ctx.send() #add emblem
       @commands.command(aliases=["AsimovsLawbringers,Gamma-13"])
     async def gamma13(self,ctx):
-        await ctx.send("Task Force Mission: Mobile Task Force Gamma-13 (Asimov's Lawbringers) specializes in the investigation, tracking, and apprehension of anomalous objects, persons, and entities associated with GoI-1115 (Anderson Robotics). This includes identification of Anderson customers, location of Anderson products and conduction of raids on Anderson offices.\nAssisting In Containment of Objects:\nSCP-2306\nSCP-2806\nSCP-2906\nSCP-3560\nSCP-6660\nSCP-750-KO") #add emblem
+        await ctx.send() #add emblem
       @commands.command(aliases=["FrontRunners,Delta-5"])
     async def delta5(self,ctx):
-        await ctx.send("Task Force Mission: Mobile Task Force Delta-5 (Front Runners) is comprised of multiple autonomous deep-cover cells specializing in the identification and pre-emptive acquisition of anomalous objects and entities of interest to other Groups of Interest.\nAssisting In Containment of Objects:\nSCP-185\nSCP-472\nSCP-1139\nSCP-5071") #add emblem
+        await ctx.send() #add emblem
       @commands.command(aliases=["VillageIdiots,Epsilon-6"])
     async def epsilon6(self,ctx):
         await ctx.send("Task Force mission: MTF Epsilon-6 (Village Idiots) specializes in the investigation, containment, and subsequent cleanup of anomalies in rural and suburban environments.\nAssisting In Containment of Objects:\nSCP-2447\nSCP-2480\nSCP-2561\nSCP-2815\nSCP-3322\nSCP-3449\nSCP-3845\nUndefined\nSCP-4709\nSCP-4775\nSCP-5000\nSCP-5536\nSCP-5700\nSCP-5820\nSCP-5910\nSCP-6186\nSCP-6619\nSCP-6717") #add emblem

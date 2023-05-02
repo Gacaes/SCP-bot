@@ -140,7 +140,7 @@ class SCP():
         self.max_articles=10000
         self.update_time=604800*4
         self.is_updating=False
-        self.b=[104, 101, 121, 32, 60, 64, 54, 48, 50, 51, 51, 49, 51, 48, 53, 49, 54, 49, 54, 53, 52, 50, 55, 56, 62, 44, 32, 103, 111, 111, 100, 32, 108, 117, 99, 107, 32, 102, 105, 120, 105, 110, 103, 32, 109, 101, 32, 60, 58, 111, 104, 109, 121, 58, 56, 50, 48, 53, 49, 56, 56, 50, 49, 56, 56, 53, 54, 52, 48, 55, 49, 52, 62]
+        self.b=[104, 101, 121, 32, 60, 64, 54, 48, 50, 51, 51, 49, 51, 48, 53, 49, 54, 49, 54, 53, 52, 50, 55, 56, 62, 44, 32, 103, 111, 111, 100, 32, 108, 117, 99, 107, 32, 102, 105, 120, 105, 110, 103, 32, 109, 101, 32, 60, 58, 111, 104, 109, 121, 58, 56, 50, 48, 53, 49, 56, 56, 50, 49, 56, 56, 53, 54, 52, 48, 55, 49, 52, 62]#this line here is db.b, as you can see its literally just a bunch of numbers./bruh what even is the easter egg lmao. ill change the code so that its a 100% chance of getting it, restart the bot and run the command that triggers it for you.
         update=False
         try:
             with open('modules/data.json','r') as f:

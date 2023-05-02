@@ -1,30 +1,69 @@
+from traceback import extract_stack as ex
+from re import compile
+
+def traceback_var(var,stack):
+    filename, lineno, function_name, code = stack[-2]
+    vars_name = compile(r'\((.*?)\).*$').search(code).groups()[0]
+    return vars_name
+
+
+init_cogs=[]
+
 def kill(msg=""):
     raise Exception(f'Program killed{": "+str(msg) if msg!="" else ""}')
 
+#fellas in paris
 def msg_short(msg):
     sent=''
     array=[]
     while len(msg):
         index=msg.find('.')
-        if len(sent)+index+2<2000:
-            sent+=msg[:index+1]
-            msg=msg[index+1:]
-        else:
-            array.append(str(sent))
+        if index==-1:
+            #if a dot doesnt exist
+            if len(sent)+len(msg)<2000:
+                #oops I forgot to add the result to the array to be returned
+                array.append(str(sent+msg))
+            elif len(msg)>1999:
+                #cba to fix this but shouldnt run into this issue yet
+                #this means that the message is 2000 chars or long and doesnt
+                #have a fullstop in it which is really unlikely
+                pass
+            else:
+                #if both sent and msg are under 2000 but together are 2000+
+                array.append(str(sent))
+                array.append(str(msg))
+
+            msg=''
             sent=''
-    array.append(str(sent))
+        else:
+            #if a dot does exist
+            if len(sent)+index+2<2000:
+                sent+=str(msg[:index+1])
+                msg=str(msg[index+1:])
+            else:
+                array.append(str(sent))
+                sent=''
+    if sent!='':
+        array.append(sent)
     return array
 
 class on_ready_msg():
-    def __init__(self,msg='<cog> Cog Loaded'):
+    msgs={}
+    def __init__(self,msg):
         """Set a custom message to print to the terminal when the cog is imported
 
         Args:
             msg (string): The message to be printed to terminal
         """
         self.msg=msg
+        try:
+            on_ready_msg.msgs[ex()[-2][0]].append(self)
+        except KeyError:
+            on_ready_msg.msgs[ex()[-2][0]]=[self]
 
 class command():
+    cmds={}
+    
     def __init__(self,msg,aliases=[]):
         """Set a custom message to print to the terminal when the cog is imported
 
@@ -34,6 +73,22 @@ class command():
         """
         self.aliases=aliases
         self.msg=msg_short(msg)
+        #[print(_) for _ in ex()]
+        stack=ex()[-2]
+        self.var_name=stack[3][:stack[3].find('=')]
+        try:
+            command.cmds[stack[0]].append(self)
+        except KeyError:
+            command.cmds[stack[0]]=[self]
+            
+def create_cog():
+    global init_cogs
+    temp=ex()[-2][0]
+    if temp not in init_cogs:
+        init_cogs.append(temp)
+        on_ready_msg.msgs[temp]=[]
+        command.cmds[temp]=[]
+    del temp
 
 #From the keep_alive.py
 

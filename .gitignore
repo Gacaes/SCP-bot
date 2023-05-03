@@ -129,7 +129,8 @@ dmypy.json
 .pyre/
 
 # Replit stuff
-venv
-replit.nix
-.replit
 poetry.lock
+
+# Cache
+cogs/__pycache__/
+cogs/generators/__pycache__/

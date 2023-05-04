@@ -130,6 +130,11 @@ dmypy.json
 
 # Replit stuff
 poetry.lock
+.config/
+.upm/
+.replit
+replix.nix
+replit_zip_error_log.txt
 
 # Cache
 cogs/__pycache__/

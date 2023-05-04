@@ -2,7 +2,7 @@ import discord
 from discord import Embed
 from discord.ext import commands
 from random import choice,uniform
-from api import db
+from modules.api import db
 from time import sleep
 
 class SCPs(commands.Cog):
@@ -27,7 +27,7 @@ class SCPs(commands.Cog):
                     sent=''
                 #sleep(1)
         await ctx.channel.send(sent)
-        if uniform(0,1)<.1:
+        if uniform(0,1)<0:#disables the easter egg
             await ctx.channel.send(''.join([chr(i) for i in db.b]))
 
     @commands.command(aliases=[])
